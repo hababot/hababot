@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Projection by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+function sendmail(){
+	var mail = document.createElement("a");
+	var userAgent = window.navigator.userAgent;
+	mail.href = "mailto:hababotdev@naver.com?Subject=개발자%20신청&body=아래%20내용을%20지우지%20마시오.%0D%0A이름%20:%20"+ $("#name").val()+"%0D%0A연락처%20:%20"+ $("#email").val()+"%0D%0A내용%20:%20"+ $("#message").val()+"%0D%0A%0D%0A유저코드%20:%20"+userAgent;
+	mail.click();
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@700&display=swap');
+</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+					<nav id="nav">
+						<a href="#">홈</a>
+						<a href="#three">하바봇이란?</a>
+						<a href="#contact">개발자 신청</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome to 하바 봇!!</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<span class="icon fa-car"></span>
+							<h3>Kakaotalk</h3>
+							<p>많은 기능이 있는신계념 카카오톡 봇!!</p>
+						</div>
+
+						<div>
+							<span class="icon fa-camera"></span>
+							<h3>Discord</h3>
+							<p>많은 기능으로 여러분을 서로잡는 봇!!</p>
+						</div>
+
+					</div>
+
+					<footer>
+						<a href="#three" class="button">About</a>
+					</footer>
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Kakaotalk<br/> Bot</h3>
+							</header>
+							<p>신기술을 활용하여 신기한 여러기능을 만들었으며 <br>오픈채팅등 여러 곳에서 사용할 수 있습니다.<br />잘 모르시겠다면 아래 버튼을 눌러 기능을 채험해보세요.<br />바로 당신이 이 봇의 주인입니다!!</p>
+							<footer>
+								<a href="#" class="button">Learn More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Discord<br /> Bot</h3>
+							</header>
+							<p>디스코드에서 이 봇을 시험해보세요.<br />깜짝 놀랄 어디서도 볼 수 없었던 기능들로 가득한 봇 바로 채험해보세요.<br /> 여러분을 놀라게할 것입니다. <br /> 지금바로 경험 해보세요.</p>
+							<footer>
+								<a href="#" class="button">Learn More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<section id="contact">
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>하바 봇이 여러분을 기다립니다.</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="신청하기" class="button alt" type="submit" onclick="sendmail()"></li>
+						</ul>
+					</form>
+
+					<div class="copyright">
+						&copy; Untitled. Design: TEMPLATED.<br>
+						&copy; Company : HABA
+					</div>
+
+				</div>
+			</footer>
+		</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
